@@ -1,0 +1,9 @@
+{% import "components/icon.html" as macros %}
+
+{% macro nav_item(icon_name, href) %}
+
+<a href="{{ href }}" class="rounded-xl bg-yellow-50" hx-target="#view" hx-get="{{ href }}">
+    {{ macros::icon(name=icon_name, size="64px") }}
+</a>
+
+{% endmacro %}

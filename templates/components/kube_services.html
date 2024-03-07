@@ -1,0 +1,14 @@
+{% import "components/kube_service.html" as service %}
+
+<div class="m-5">
+    <h1 class="text-xl pb-5">
+        Kubernetes Services:   
+    </h1>
+    <div class="grid grid-cols-2 border-solid border-black border-2">
+        {% if services %}
+        {% for svc in services %}
+            {{ service::kube_service(service=svc) }}
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>

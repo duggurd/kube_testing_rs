@@ -1,0 +1,6 @@
+{% macro kube_service(service) %}
+<div class="p-5 m-2 border-solid rounded-md border-black border-2 bg-slate-100 hover:bg-slate-400">
+    <h1 class="text-xl">{{ service.name }}</h1>
+    <a>{{ service.port }}</a>
+</div>
+{% endmacro %}

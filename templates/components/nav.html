@@ -1,0 +1,12 @@
+{% import "components/nav-item.html" as macros %}
+
+<div class="p-1 bg-blue-800 justify-center flex items-center">
+    <ul>
+        <li>
+            {{ macros::nav_item(icon_name="kube", href="/home") }}
+        </li>
+        <li>
+            {{ macros::nav_item(icon_name="gear", href="/services") }}
+        </li>
+    </ul>
+</div>
